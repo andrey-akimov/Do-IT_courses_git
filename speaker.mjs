@@ -2,7 +2,7 @@ import Person from "./person.mjs";
 
 class Speaker extends Person {
     say(phrase) {
-        console.log(`"${super(phrase)}" very confidently`)
+        console.log(`"${super.say(phrase)}" very confidently`)
     }
 }
 
