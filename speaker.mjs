@@ -4,10 +4,13 @@ class Speaker extends Person {
     say(phrase) {
         console.log(`"${super.say(phrase)}" very very confidently`);
     }
+    jump(times) {
+        console.log(super.jump(times));
+    }
 }
 
 let john = new Person('John');
-console.log(john.say('Hello!'));
+john.say('Hello!'), john.jump(1);
 
 let bob = new Speaker('Bob');
-console.log(bob.say('Hi!'));
+bob.say('Hi!'), bob.jump(3);

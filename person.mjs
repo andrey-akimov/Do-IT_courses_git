@@ -6,5 +6,8 @@ export default class Person {
     say(phrase) {
         return `${this.name} says ${phrase}`;
     }
-}
 
+    jump(times) {
+        return `And jump ${times} time(s)`;
+    }
+}
