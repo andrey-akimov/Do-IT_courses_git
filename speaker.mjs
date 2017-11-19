@@ -1,8 +1,8 @@
-import Person from "./person.mjs";
+import Person from './person.mjs';
 
 class Speaker extends Person {
     say(phrase) {
-        console.log(`"${super.say(phrase)}" very confidently`)
+        console.log(`"${super.say(phrase)}" very very confidently`);
     }
 }
 
@@ -11,4 +11,3 @@ console.log(john.say('Hello!'));
 
 let bob = new Speaker('Bob');
 console.log(bob.say('Hi!'));
-
